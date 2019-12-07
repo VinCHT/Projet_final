@@ -7,7 +7,10 @@ class Timer {
 
     countdown() { 
         setTimeout('MonTimer.Decrement()', 60); 
-        
+        document.getElementById("conclusion").style.display = "block";
+        document.getElementById("reserver").style.display = "none"; 
+        document.getElementById("reservation").style.display = "none"; 
+        MonTimer = new Timer (20);
     } 
 
     Decrement() { 
@@ -35,13 +38,14 @@ class Timer {
         if(this.mins < 0) {
             this.minutes.value = 0; 
             this.seconds.value = 0; 
-           
+           alert('La session a expiré');
         
     }
  
         else { 
             this.secs--; 
             setTimeout('MonTimer.Decrement()', 1000); 
+            
         
         } 
        
@@ -63,7 +67,7 @@ class Timer {
     stop() {
         this.mins= 20;
         this.secs=0;
-      
+       
     }
    
 
