@@ -90,9 +90,4 @@ class MonSlider {
 }
 
 
-// let MonSliders = new MonSlider(null,document.getElementById("playPause"),0,document.getElementsByClassName("contenuImages"),document.querySelector(".legende .legendeText"));
-// MonSliders.setTimer();
-
-
-
 
